@@ -1,0 +1,649 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+a{
+  text-decoration: none;
+  color:#444;
+}
+p{
+  line-height: 1;
+}
+img{
+  border: 0;
+  vertical-align: top;
+}
+ul{
+  list-style-type: none !important;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0 0 5px;
+  line-height: 1.35;
+  color: #777;
+}
+body{
+  background-color: rgb(255,255,255);
+  color: rgb(119,119,119);
+  text-align: center;
+  font: 12px/1 微软雅黑,Arial,Helvetica,sans-serif;
+  display: block;
+}
+.wrap .page{
+  position: relative;
+  left: 0;
+  transition: left 0.3s;
+}
+.wrap .page .header-container{
+  box-shadow: 1px 1px 1px #eee;
+  border: 0;
+  width: 100%;
+  height: 80px;
+  border-bottom: none;
+  position: absolute;
+  z-index: 101;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+}
+.wrap .page .header-container .header{
+  background-color: transparent;
+  font-size: 12px;
+  position: relative;
+}
+.wrap .page .header-container .header .auto{
+  width:1199px;
+}
+.wrap .page .header-container .header .auto .logo{
+  margin-left: 10%;
+  position: absolute;
+  top: -20%;
+}
+.wrap .page .header-container .header .auto .list{
+  width:100%;
+  text-align: center;
+  margin: 0px auto 0;
+  padding-right: 35px;
+  letter-spacing: 0.5px;
+}
+.wrap .page .header-container .header .auto .list ul{
+  padding-right: 0px;
+  margin-left: 35%;
+  margin-top: 3%;
+  height: 80px;
+}
+.wrap .page .header-container .header .auto .list ul li{
+  float: left;
+  padding:0 10px;
+  width: 16%;
+}
+.wrap .page .header-container .header .auto .list ul li a{
+  position: relative;
+  padding: 33px 19px !important;
+  color: #000;
+  font-size: 14px;
+}
+.wrap .page .header-container .header .auto .list ul li:hover a{
+  color:#aaa;
+}
+.wrap .page .header-container .header .auto .list ul li:first-child:hover .zb{
+  display: block;
+}
+.wrap .page .header-container .header .auto .soso{
+  position: absolute;
+  top:-10%;
+  left: 80%;
+}
+.wrap .page .header-container .header .auto .soso input{
+  padding: 5px 10px;
+  color: #aaa;
+}
+.wrap .page .header-container .header .auto .soso a img{
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  left: 85%;
+  top: 16%;
+}
+.auto .zb{
+  display: none;
+  z-index: 10;
+  width: 100%;
+  height: 380px;
+  background-color: #fff;
+  position: absolute;
+  top: 46px;
+}
+.auto .zb .le{
+  width: 60%;
+  height: 370px;
+}
+.auto .zb .tle{
+  margin-left: 17%;
+  height: 1px;
+  margin-top: 3%;
+}
+.auto .zb .le .tle li{
+  float: left;
+  font-size: 15px;
+  padding-right: 198px;
+}
+.auto .zb .le .tle li a:hover{
+  color: #ccc;
+}
+.auto .zb .le .xl{
+  margin-top: 3%;
+  margin-left: 17%;
+}
+.auto .zb .le .xl ul{
+  width:245px;
+  height: 300px;
+  float: left;
+  padding-right:60px;
+}
+.auto .zb .le .xl ul li{
+  padding: 8px 0;
+}
+.auto .zb .le .xl ul li a:hover{
+  color:#ccc;
+}
+.auto .zb .img{
+  width:300px;
+  height: 260px;
+  position: absolute;
+  top:8%;
+  left: 60%;
+}
+.auto .zb .img img{
+  width:300px;
+  height: 260px;
+}
+/* .wrap .page .header-container .header .auto .list ul li:first-child:hover .auto .zb{
+  display: block;
+  z-index: 50;
+} */
+.auto .lp{
+  display: none;
+  z-index: 10;
+  width: 100%;
+  height: 380px;
+  background-color: #fff;
+  position: absolute;
+  top: 46px;
+}
+.auto .lp .le{
+  width: 60%;
+  height: 370px;
+}
+.auto .lp .tle{
+  margin-left: 17%;
+  height: 1px;
+  margin-top: 3%;
+}
+.auto .lp .le .tle li{
+  float: left;
+  font-size: 15px;
+  padding-right: 198px;
+}
+.auto .lp .le .tle li a:hover{
+  color: #ccc;
+}
+.auto .lp .le .xl{
+  margin-top: 3%;
+  margin-left: 17%;
+}
+.auto .lp .le .xl ul{
+  width:245px;
+  height: 300px;
+  float: left;
+  padding-right:60px;
+}
+.auto .lp .le .xl ul li{
+  padding: 8px 0;
+}
+.auto .lp .le .xl ul:last-child li{
+  padding: 8px 13px;
+}
+.auto .lp .le .xl ul li a:hover{
+  color:#ccc;
+}
+.auto .lp .img{
+  width:300px;
+  height: 260px;
+  position: absolute;
+  top:8%;
+  left: 60%;
+}
+.auto .lp .img img{
+  width:300px;
+  height: 260px;
+}
+.auto .jr{
+  display: none;
+  z-index: 10;
+  width: 100%;
+  height: 265px;
+  background-color: #fff;
+  position: absolute;
+  top: 46px;
+}
+.auto .jr .imgs{
+  width: 1199px;
+  margin: 0 auto;
+}
+.auto .jr .imgs li{
+  float: left;
+  padding: 16px 16px 10px 5px;
+}
+.auto .jr .imgs li a img{
+  width: 150px;
+  height: 155px;
+}
+.auto .jr .msg{
+  width: 1199px;
+  margin: 0 auto;
+}
+.auto .jr .msg li{
+  float: left;
+  padding: 16px 16px 10px 5px;
+}
+.auto .jr .msg li a span{
+  display: block;
+  width: 150px;
+  height: 155px;
+  text-align: center;
+}
+.auto .dz{
+  display: none;
+  z-index: 10;
+  width: 100%;
+  height: 380px;
+  background-color: #fff;
+  position: absolute;
+  top: 46px;
+}
+.auto .dz .le{
+  width: 60%;
+  height: 370px;
+}
+.auto .dz .tle{
+  margin-left: 17%;
+  height: 1px;
+  margin-top: 3%;
+}
+.auto .dz .le .tle li{
+  float: left;
+  font-size: 15px;
+  padding-right: 198px;
+}
+.auto .dz .le .tle li a:hover{
+  color: #ccc;
+}
+.auto .dz .le .xl{
+  margin-top: 3%;
+  margin-left: 17%;
+}
+.auto .dz .le .xl ul{
+  width:245px;
+  height: 300px;
+  float: left;
+  padding-right:60px;
+}
+.auto .dz .le .xl ul:not(:first-child){
+  margin-left: -17px;
+}
+.auto .dz .le .xl ul li{
+  padding: 8px 0;
+}
+.auto .dz .le .xl ul li a:hover{
+  color:#ccc;
+}
+.auto .dz .img{
+  width:300px;
+  height: 260px;
+  position: absolute;
+  top:8%;
+  left: 60%;
+}
+.auto .dz .img img{
+  width:300px;
+  height: 260px;
+}
+
+.container{
+  padding: 20px 0 10px;
+  min-height: 400px;
+  background: #fff;
+  border-top: 1px solid #f1f1f1;
+  position: absolute;
+  top: 80px;
+}
+.container .main{
+  padding: 0;
+  text-align: left;
+  max-width: 100%;
+  width: 1170px;
+  margin-left: 300px;
+  margin-right: auto;
+}
+.container .main .auto{
+  padding-bottom: 30px;
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .main .auto .row{
+  margin-left: -15px;
+  margin-left: -15px;
+}
+.container .main .auto .row .pro-img{
+  width: 50%;
+  text-align: left;
+  margin-top: 38px;
+  float: left;
+}
+.container .main .auto .row .pro-img .big-img{
+  width: 400px;
+  margin-left: 55px;
+}
+.container .main .auto .row .pro-img .big-img .zoom{
+  width: 400px;
+}
+.container .main .auto .row .pro-img .x-imglist a img{
+  width: 100px;
+  height: 100px;
+}
+
+
+.container .main .auto .row .pro-shop{
+  float: right;
+  width: 40%;
+  margin-top: 40px;
+  margin-right: 70px;
+}
+.container .main .auto .row .pro-shop .name h1{
+  font-size: 20px;
+  line-height: 1;
+  color: #000;
+  text-transform: uppercase;
+  overflow: hidden;
+  width: 80%;
+  height: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.container .main .auto .row .pro-shop .sku{
+  width: 100%;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #eeeeee;
+}
+.container .main .auto .row .pro-shop .sku{
+  display: inline-block;
+  font-size: 11px;
+}
+.container .main .auto .row .pro-shop .info{
+  width: 100%;
+  margin-top: 24px;
+}
+.container .main .auto .row .pro-shop .info .price{
+  margin-bottom: 20px;
+  vertical-align: middle;
+}
+.container .main .auto .row .pro-shop .info .price span{
+  font-size: 30px;
+  font-family: "OpenSans";
+  font-weight: normal;
+  color: #333;
+  vertical-align: middle;
+  line-height: 1;
+}
+.container .main .auto .row .pro-shop .group{
+  width: 100%;
+  color: rgb(119,119,119);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container .main .auto .row .pro-shop .group .default{
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  height: 40px;
+  border-color: #eee;
+  background: #fff;
+  color: #333;
+  border-top: 1px solid #eee;
+}
+.container .main .auto .row .pro-shop .group .default a h2{
+  margin-bottom: 0;
+  color: inherit;
+  height: 44px;
+  line-height: 44px;
+  margin-top: -4px;
+  color: #777;
+  font-size: 11px;
+  font-weight: 400;
+}
+.container .main .auto .row .pro-shop .group .default a h2::after{
+  font-size: 13px;
+  content: "+";
+  font-family: "photofont";
+  margin-top: 0px;
+  position: absolute;
+  right: 90px;
+}
+.container .main .auto .row .pro-shop .group .default .click{
+  display: none;
+  position: absolute;
+  width: 400px;
+  height: 225px;
+  background-color: wheat;
+  border-radius: 20px;
+}
+.container .main .auto .row .pro-shop .group .default .click .auto{
+  padding: 20px;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  line-height: 1.8;
+}
+.container .main .auto .row .pro-shop .group .collpase{
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  height: 40px;
+  border-color: #eee;
+  background: #fff;
+  color: #333;
+  border-top: 1px solid #eee;
+  display: block;
+}
+.container .main .auto .row .pro-shop .group .collpase a h2{
+  margin-bottom: 0;
+  color: inherit;
+  height: 44px;
+  line-height: 44px;
+  margin-top: -4px;
+  color: #777;
+  font-size: 11px;
+  font-weight: 400;
+}
+.container .main .auto .row .pro-shop .group .collpase a h2::after{
+  font-size: 13px;
+  content: "+";
+  font-family: "photofont";
+  margin-top: 0px;
+  position: absolute;
+  right: 90px;
+}
+.container .main .auto .row .pro-shop .group .title{
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  height: 40px;
+  border-color: #eee;
+  background: #fff;
+  color: #333;
+  border-top: 1px solid #eee;
+}
+.container .main .auto .row .pro-shop .group .title h2{
+  padding-top: 10px;
+  color: #777;
+  font-size: 11px;
+  font-weight: 400;
+}
+.container .main .auto .row .pro-shop .group .title h2 span{
+  width: 4px;
+  height: 4px;
+  background: #888;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 5px;
+  margin: 0 5px;
+}
+.container .main .auto .row .pro-shop button{
+  width: 65%;
+  height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  background: rgb(230, 0, 68);
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  font-size: 14px;
+}
+.container .main .auto .row .pro-shop button a{
+  color: #fff;
+}
+.container .main .auto .row .pro-shop .lists li{
+  line-height: 22px;
+  padding-right: 40px;
+  float: left;
+}
+.container .middle .tlies{
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 650px;
+  width: 100%;
+}
+.container .middle .xlnemy{
+  position: absolute;
+  top: 720px;
+}
+.container .middle .xlnemy .auto{
+  width: 100%;
+  max-width: 1170px;
+  padding-bottom: 20px;
+  margin: 20px 190px;
+}
+.container .middle .xlnemy .auto ul li{
+  float: left;
+  padding: 0 44px;
+}
+.container .middle .xlnemy .auto ul li a img{
+  width: 131.2px;
+  height: 131.2px;
+}
+.container .middle .xlnemy .auto ul li a div span{
+  height: 17px;
+  font-size: 11px;
+  color: #888;
+  font-style: italic;
+  letter-spacing: 1px;
+  display: block;
+  margin-top: 25px;
+}
+.container .middle .xlnemy .auto ul li a div h3{
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  vertical-align: middle;
+  line-height: 1;
+  white-space: nowrap !important;
+  margin-top: 10px;
+}
+
+.footer{
+  border-top: 1px solid #ececec;
+  width: 100%;
+  margin-top: 0px;
+  position: absolute;
+  top: 1100px;
+  left: 0px;
+}
+.footer .auto .top{
+  background-image: url("../images/cnfooter.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 316px;
+  line-height: 40px;
+  padding: 20px 0;
+  position: relative;
+}
+.footer .auto .top .auto{
+  width: 1170px;
+  margin: auto;
+  max-width: 100%;
+  padding-left: 3%;
+  padding-top: 25px;
+}
+.footer .auto .top .auto div{
+  position: relative;
+  min-height: 1px;
+  padding-right: 0;
+  padding-left: 0;
+  width: 20%;
+  float: left;
+  text-align: left;
+}
+.footer .auto .top .auto div h2{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  margin: 0 0 5px;
+  line-height: 1.35;
+}
+.footer .auto .top .auto div ul{
+  margin: 0;
+  padding: 0;
+}
+.footer .auto .top .auto div ul li a{
+  color: #fff;
+}
+.footer .auto .bom{
+  height: 50px;
+  line-height: 50px;
+  background-color: #000;
+  color: #fff;
+  position: absolute;
+  top: 316px;
+  left: 0;
+  width: 100%;
+}
+.footer .auto .bom .auto{
+  max-width: 100%;
+  width: 1199px;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer .auto .bom .auto a{
+  display: inline-block;
+  color: #fff;
+}
+.footer .auto .bom .auto address{
+  display: inline-block;
+  text-align: left;
+  margin: 0;
+  font-style: normal;
+  line-height: 1.42;
+}
